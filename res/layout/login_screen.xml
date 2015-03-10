@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:padding="30dp"
+    android:background="@drawable/background_image">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:paddingBottom="5dp"
+        android:text="Welcome!"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="30dp"
+        android:text="We are delighted to help you in quest for a satisfactory job!"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/welcomeText"
+        android:layout_below="@+id/welcomeText"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        android:background="#63D1F4"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/register"
+        android:layout_alignBottom="@+id/register"
+        android:layout_toRightOf="@+id/welcome"
+        android:background="#63D1F4"
+        android:text="Login"
+        android:textColor="#ffffff" />
+    
+</RelativeLayout>
